@@ -49,8 +49,10 @@ def selection_sort(the_list):
                 # set the minimum index to be j
                 minimum_index = j
 
-        # now swap the minimum index and the i index
-        swap(the_list, i, minimum_index)
+        # now swap the minimum index and the i index, only if they are
+        # different
+        if minimum_index != i:
+            swap(the_list, i, minimum_index)
 
     return the_list
 
