@@ -1,5 +1,5 @@
 """
-Python bubble sort implementation
+Python selection sort implementation
 2020919
 ProjectFullStack
 """
