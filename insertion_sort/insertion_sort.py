@@ -7,37 +7,7 @@ ProjectFullStack
 import random
 
 
-def swap(the_list, index_left, index_right):
-    """
-    Swaps elements index_left and index_right in the the_list
-    :param the_list: the list
-    :type the_list: list
-    :param index_left: the left index
-    :type index_left: int
-    :param index_right: the right index
-    :type index_right: int
-    :return: None
-    :rtype: None
-    """
-    temp_placeholder = the_list[index_right]
-    the_list[index_right] = the_list[index_left]
-    the_list[index_left] = temp_placeholder
-
-
 def insertion_sort(the_list):
-    """
-    Sorts an unsorted list using insertion sort algorithm
-    Time Complexity: n = length of unsorted list
-        Best Case: O(n)
-        Average Case: O(n^2)
-        Worst Case: O(n^2)
-    Space Complexity:
-        O(1)
-    :param the_list: the unsorted list
-    :type the_list: list
-    :return: a sorted list
-    :rtype: list
-    """
     # outer loop, we start at index 1 because we always assume the
     # FIRST element in the_list is sorted. That is the basis of how
     # insertion sort works
