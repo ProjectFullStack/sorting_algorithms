@@ -15,7 +15,7 @@ def insertion_sort(the_list):
         # "pull out" or store the value we are trying to insert
         insert_value = the_list[i]
 
-        # inner WHILE loop, start at the last sorted index ( which is at j - 1)
+        # inner WHILE loop, start at the last sorted index ( which is at i - 1)
         # and count DOWN check each value we find at j against the
         # value we are trying to insert
         j = i - 1
