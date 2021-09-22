@@ -57,22 +57,30 @@ def selection_sort(the_list):
     return the_list
 
 
-# Test Case 1, list of 5 elements
-unsorted_list = [17, 12, 37, 19, 20]
-sorted_list = selection_sort(list(unsorted_list))
-print(f"{unsorted_list} -> {sorted_list}")
+# Test Case 1, list of 8 elements
+unsorted = [17, 12, 37, 19, 20]
+python_sorted = list(unsorted)
+python_sorted.sort()
+our_sorted = selection_sort(list(unsorted))
+print(f"Passed: {python_sorted == our_sorted} : {unsorted} -> {our_sorted}")
 
 # Test Case 2, list of 5 elements, include negative numbers
-unsorted_list = [-5, -100, 3245, 10, 2532]
-sorted_list = selection_sort(list(unsorted_list))
-print(f"{unsorted_list} -> {sorted_list}")
+unsorted = [-5, -100, 3245, 10, 2532]
+python_sorted = list(unsorted)
+python_sorted.sort()
+our_sorted = selection_sort(list(unsorted))
+print(f"Passed: {python_sorted == our_sorted} : {unsorted} -> {our_sorted}")
 
 # Test Case 3, list of 0 elements
-unsorted_list = []
-sorted_list = selection_sort(list(unsorted_list))
-print(f"{unsorted_list} -> {sorted_list}")
+unsorted = []
+python_sorted = list(unsorted)
+python_sorted.sort()
+our_sorted = selection_sort(list(unsorted))
+print(f"Passed: {python_sorted == our_sorted} : {unsorted} -> {our_sorted}")
 
 # Test Case 4, random list of 20 elements
-unsorted_list = random.sample(range(0, 100), 20)
-sorted_list = selection_sort(list(unsorted_list))
-print(f"{unsorted_list} -> {sorted_list}")
+unsorted = random.sample(range(0, 100), 20)
+python_sorted = list(unsorted)
+python_sorted.sort()
+our_sorted = selection_sort(list(unsorted))
+print(f"Passed: {python_sorted == our_sorted} : {unsorted} -> {our_sorted}")
