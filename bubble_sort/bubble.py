@@ -55,28 +55,35 @@ def simple_bubble_sort(the_list):
     return the_list
 
 
-# Test Case 1, list of 8 elements
+# Test Case 1, list of 5 elements
 unsorted = [17, 12, 37, 19, 20]
 python_sorted = list(unsorted)
 python_sorted.sort()
 our_sorted = simple_bubble_sort(list(unsorted))
 print(f"Passed: {python_sorted == our_sorted} : {unsorted} -> {our_sorted}")
 
-# Test Case 2, list of 5 elements, include negative numbers
+# Test Case 2, list of 5 elements with duplicate values
+unsorted = [17, 12, 12, 19, 20]
+python_sorted = list(unsorted)
+python_sorted.sort()
+our_sorted = simple_bubble_sort(list(unsorted))
+print(f"Passed: {python_sorted == our_sorted} : {unsorted} -> {our_sorted}")
+
+# Test Case 3, list of 5 elements, include negative numbers
 unsorted = [-5, -100, 3245, 10, 2532]
 python_sorted = list(unsorted)
 python_sorted.sort()
 our_sorted = simple_bubble_sort(list(unsorted))
 print(f"Passed: {python_sorted == our_sorted} : {unsorted} -> {our_sorted}")
 
-# Test Case 3, list of 0 elements
+# Test Case 4, list of 0 elements
 unsorted = []
 python_sorted = list(unsorted)
 python_sorted.sort()
 our_sorted = simple_bubble_sort(list(unsorted))
 print(f"Passed: {python_sorted == our_sorted} : {unsorted} -> {our_sorted}")
 
-# Test Case 4, random list of 20 elements
+# Test Case 5, random list of 20 elements
 unsorted = random.sample(range(0, 100), 20)
 python_sorted = list(unsorted)
 python_sorted.sort()
@@ -124,28 +131,35 @@ def better_bubble_sort(the_list):
     return the_list
 
 
-# Test Case 1, list of 8 elements
+# Test Case 1, list of 5 elements
 unsorted = [17, 12, 37, 19, 20]
 python_sorted = list(unsorted)
 python_sorted.sort()
 our_sorted = better_bubble_sort(list(unsorted))
 print(f"Passed: {python_sorted == our_sorted} : {unsorted} -> {our_sorted}")
 
-# Test Case 2, list of 5 elements, include negative numbers
+# Test Case 2, list of 5 elements with duplicate values
+unsorted = [17, 12, 12, 19, 20]
+python_sorted = list(unsorted)
+python_sorted.sort()
+our_sorted = better_bubble_sort(list(unsorted))
+print(f"Passed: {python_sorted == our_sorted} : {unsorted} -> {our_sorted}")
+
+# Test Case 3, list of 5 elements, include negative numbers
 unsorted = [-5, -100, 3245, 10, 2532]
 python_sorted = list(unsorted)
 python_sorted.sort()
 our_sorted = better_bubble_sort(list(unsorted))
 print(f"Passed: {python_sorted == our_sorted} : {unsorted} -> {our_sorted}")
 
-# Test Case 3, list of 0 elements
+# Test Case 4, list of 0 elements
 unsorted = []
 python_sorted = list(unsorted)
 python_sorted.sort()
 our_sorted = better_bubble_sort(list(unsorted))
 print(f"Passed: {python_sorted == our_sorted} : {unsorted} -> {our_sorted}")
 
-# Test Case 4, random list of 20 elements
+# Test Case 5, random list of 20 elements
 unsorted = random.sample(range(0, 100), 20)
 python_sorted = list(unsorted)
 python_sorted.sort()
