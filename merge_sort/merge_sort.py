@@ -29,7 +29,7 @@ def merge_lists(left, right):
             # and increment i
             result.append(left[i])
             i += 1
-        elif left[i] > right[j]:
+        else:
             # the value in the right is greater than the value in left
             # append the value in the right to the return array
             # and increment j
@@ -68,7 +68,7 @@ def merge_sort(the_list):
 
 
 # Test Case 1, list of 8 elements
-unsorted = [17, 12, 37, 19, 20, 4, 15, 2]
+unsorted = [17, 12, 37, 12, 19, 20, 4, 15, 2]
 python_sorted = list(unsorted)
 python_sorted.sort()
 our_sorted = merge_sort(list(unsorted))
