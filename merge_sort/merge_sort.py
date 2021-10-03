@@ -1,5 +1,5 @@
 """
-Python insertion sort implementation
+Python merge sort implementation
 20210922
 ProjectFullStack
 """
